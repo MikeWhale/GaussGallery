@@ -29,7 +29,7 @@ handlers:
   secure: optional
   
 libraries:
-- name: numpy
-  version: "1.6.1"
+  - name: PIL
+    version: latest
   
   
