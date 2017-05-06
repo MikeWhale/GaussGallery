@@ -3,7 +3,6 @@
 import StringIO
 import struct
 
-
 def getImageInfo(data):
     data = str(data)
     size = len(data)
