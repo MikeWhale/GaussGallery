@@ -72,7 +72,6 @@ class AboutPage(PublicPage):
             template_value={}
             self.render('views/about.html', template_value)
 
-
 class FindPage(PublicPage):
         def get(self):
             template_value = {}
