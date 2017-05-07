@@ -6,7 +6,6 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 from google.appengine.api import users
 import methods,logging
-import imahecompare
 
 class AdminControl(webapp.RequestHandler):
     def render(self,template_file,template_value):
@@ -39,7 +38,6 @@ class Find(AdminControl):
         self.render('views/find.html', {})
         
     def post(self):
-        PixelCompare(im1, im2, mode = "pct", alpha = .01):
         bf=self.request.get("file")
         if not bf:
             return self.redirect('/admin/find/')
